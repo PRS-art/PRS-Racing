@@ -1,0 +1,1142 @@
+{
+ "tiers": {
+  "t1": {
+   "name": "Tier 1",
+   "when": "Saturdays · 7:00 PM UK",
+   "current": 9,
+   "constructors": [
+    [
+     "Ferrari",
+     154
+    ],
+    [
+     "Mercedes",
+     153
+    ],
+    [
+     "Cadillac",
+     124
+    ],
+    [
+     "Aston Martin Aramco Mercedes",
+     67
+    ],
+    [
+     "Williams Mercedes",
+     61
+    ],
+    [
+     "Red Bull Racing Honda RBPT",
+     47
+    ],
+    [
+     "Audi",
+     39
+    ],
+    [
+     "McLaren Mercedes",
+     37
+    ],
+    [
+     "Haas Ferrari",
+     36
+    ],
+    [
+     "Alpine Renault",
+     28
+    ],
+    [
+     "RB Honda RBPT",
+     28
+    ]
+   ],
+   "drivers": [
+    [
+     "Silky",
+     "Ferrari",
+     109
+    ],
+    [
+     "AJM",
+     "Cadillac",
+     80
+    ],
+    [
+     "MAjoRPurGe",
+     "Mercedes",
+     73
+    ],
+    [
+     "d4luckii",
+     "Mercedes",
+     66
+    ],
+    [
+     "Speedhawk",
+     "Williams Mercedes",
+     61
+    ],
+    [
+     "FerrariAsian",
+     "Red Bull Racing Honda RBPT",
+     53
+    ],
+    [
+     "Turbo",
+     "Reserve",
+     42
+    ],
+    [
+     "Josh",
+     "Reserve",
+     39
+    ],
+    [
+     "Dash",
+     "Haas Ferrari",
+     28
+    ],
+    [
+     "JusDes",
+     "Alpine Renault",
+     26
+    ],
+    [
+     "Bayley",
+     "Audi",
+     25
+    ],
+    [
+     "Hugh",
+     "Reserve",
+     23
+    ],
+    [
+     "Banty",
+     "Reserve",
+     21
+    ],
+    [
+     "Trybe",
+     "Reserve",
+     20
+    ],
+    [
+     "c7gio",
+     "Ferrari",
+     14
+    ],
+    [
+     "Daniel",
+     "Reserve",
+     12
+    ],
+    [
+     "rebel",
+     "Reserve",
+     12
+    ],
+    [
+     "Miles",
+     "Reserve",
+     11
+    ],
+    [
+     "Mrchicken",
+     "Reserve",
+     10
+    ],
+    [
+     "divabomb",
+     "Red Bull Racing Honda RBPT",
+     10
+    ]
+   ],
+   "races": [
+    [
+     0,
+     "Barcelona",
+     "Spain",
+     "11 Sep"
+    ],
+    [
+     1,
+     "Melbourne",
+     "Australia",
+     "18 Sep"
+    ],
+    [
+     2,
+     "Shanghai",
+     "China",
+     "25 Sep"
+    ],
+    [
+     3,
+     "Miami",
+     "United States",
+     "2–4 Oct"
+    ],
+    [
+     4,
+     "Montreal",
+     "Canada",
+     "9 Oct"
+    ],
+    [
+     5,
+     "Las Vegas",
+     "United States",
+     "16 Oct"
+    ],
+    [
+     6,
+     "Madrid",
+     "Spain",
+     "23 Oct"
+    ],
+    [
+     7,
+     "Zandvoort",
+     "Netherlands",
+     "30 Oct"
+    ],
+    [
+     8,
+     "Monza",
+     "Italy",
+     "6 Nov"
+    ],
+    [
+     9,
+     "Bahrain",
+     "Bahrain",
+     "13 Nov"
+    ],
+    [
+     10,
+     "Interlagos",
+     "Brazil",
+     "20 Nov"
+    ]
+   ]
+  },
+  "t2": {
+   "name": "Tier 2",
+   "when": "Saturdays · 5:00 PM UK",
+   "current": 7,
+   "constructors": [
+    [
+     "Red Bull Racing Honda RBPT",
+     145
+    ],
+    [
+     "Alpine Renault",
+     93
+    ],
+    [
+     "Ferrari",
+     78
+    ],
+    [
+     "RB Honda RBPT",
+     72
+    ],
+    [
+     "McLaren Mercedes",
+     65
+    ],
+    [
+     "Mercedes",
+     65
+    ],
+    [
+     "Cadillac",
+     52
+    ],
+    [
+     "Audi",
+     41
+    ],
+    [
+     "Aston Martin Aramco Mercedes",
+     24
+    ],
+    [
+     "Williams Mercedes",
+     8
+    ],
+    [
+     "Haas Ferrari",
+     0
+    ]
+   ],
+   "drivers": [
+    [
+     "Hugh",
+     "Cadillac",
+     85
+    ],
+    [
+     "Daniel",
+     "Red Bull Racing Honda RBPT",
+     83
+    ],
+    [
+     "Charlie",
+     "Ferrari",
+     68
+    ],
+    [
+     "Divabomb",
+     "Reserve",
+     62
+    ],
+    [
+     "Clyde",
+     "Alpine Renault",
+     53
+    ],
+    [
+     "Ryan",
+     "Mercedes",
+     46
+    ],
+    [
+     "MRchicken",
+     "Reserve",
+     38
+    ],
+    [
+     "Jakub",
+     "Red Bull Racing Honda RBPT",
+     35
+    ],
+    [
+     "Jimbo",
+     "Ferrari",
+     35
+    ],
+    [
+     "Roi",
+     "RB Honda RBPT",
+     25
+    ],
+    [
+     "Shannon",
+     "Alpine Renault",
+     24
+    ],
+    [
+     "James",
+     "Audi",
+     20
+    ],
+    [
+     "Mojo",
+     "Mercedes",
+     19
+    ],
+    [
+     "Zyfar",
+     "Reserve",
+     15
+    ],
+    [
+     "Jason",
+     "Reserve",
+     15
+    ],
+    [
+     "RonTheDon2010",
+     "Reserve",
+     9
+    ],
+    [
+     "Aixfox",
+     "Reserve",
+     8
+    ],
+    [
+     "Fozzy",
+     "Aston Martin Aramco Mercedes",
+     8
+    ],
+    [
+     "Ukrainian",
+     "Reserve",
+     8
+    ],
+    [
+     "Smoothplayer",
+     "Reserve",
+     7
+    ]
+   ],
+   "races": [
+    [
+     1,
+     "Mexico"
+    ],
+    [
+     2,
+     "Imola"
+    ],
+    [
+     3,
+     "Hungary"
+    ],
+    [
+     4,
+     "Las Vegas"
+    ],
+    [
+     5,
+     "Spa"
+    ],
+    [
+     6,
+     "Brazil"
+    ],
+    [
+     7,
+     "Bahrain"
+    ],
+    [
+     8,
+     "Abu Dhabi"
+    ]
+   ]
+  },
+  "f1": {
+   "name": "F1 25",
+   "when": "Sundays · 5:00 PM UK",
+   "current": 3,
+   "constructors": [
+    [
+     "Ferrari",
+     27
+    ],
+    [
+     "Racing Bulls",
+     26
+    ],
+    [
+     "Mercedes",
+     25
+    ],
+    [
+     "Williams",
+     14
+    ],
+    [
+     "Aston Martin",
+     6
+    ],
+    [
+     "Alpine",
+     3
+    ],
+    [
+     "McLaren",
+     0
+    ],
+    [
+     "Haas",
+     0
+    ],
+    [
+     "Kick Sauber",
+     0
+    ],
+    [
+     "Red Bull Racing",
+     0
+    ]
+   ],
+   "drivers": [
+    [
+     "Kultx",
+     "Mercedes",
+     25
+    ],
+    [
+     "Asian",
+     "Racing Bulls",
+     18
+    ],
+    [
+     "Major",
+     "Ferrari",
+     15
+    ],
+    [
+     "d4luckii",
+     "Ferrari",
+     12
+    ],
+    [
+     "fazesharts",
+     "Williams",
+     10
+    ],
+    [
+     "EJT",
+     "Racing Bulls",
+     8
+    ],
+    [
+     "king car",
+     "Aston Martin",
+     6
+    ],
+    [
+     "Fozzy",
+     "Williams",
+     4
+    ],
+    [
+     "Mr McChicken",
+     "Alpine",
+     2
+    ],
+    [
+     "Hugh",
+     "Alpine",
+     1
+    ],
+    [
+     "Dobbie",
+     "Aston Martin",
+     0
+    ],
+    [
+     "Souljack",
+     "McLaren",
+     0
+    ],
+    [
+     "AJM",
+     "Red Bull Racing",
+     0
+    ],
+    [
+     "Silky",
+     "Red Bull Racing",
+     0
+    ],
+    [
+     "jimbomacca",
+     "Mercedes",
+     0
+    ]
+   ],
+   "races": [
+    [
+     1,
+     "Bahrain"
+    ],
+    [
+     2,
+     "Australia"
+    ],
+    [
+     3,
+     "Canada"
+    ],
+    [
+     4,
+     "Spain"
+    ],
+    [
+     5,
+     "Belgium"
+    ],
+    [
+     6,
+     "United States"
+    ],
+    [
+     7,
+     "Brazil"
+    ],
+    [
+     8,
+     "UAE"
+    ]
+   ]
+  }
+ },
+ "lineups": {
+  "t1": [
+   [
+    "Alpine",
+    [
+     [
+      "Onemorewound"
+     ],
+     null
+    ]
+   ],
+   [
+    "Aston Martin",
+    [
+     null,
+     null
+    ]
+   ],
+   [
+    "Audi",
+    [
+     [
+      "Bayley",
+      95,
+      "TP"
+     ],
+     [
+      "Rebel",
+      9
+     ]
+    ]
+   ],
+   [
+    "Cadillac",
+    [
+     [
+      "AJM",
+      63,
+      "TP"
+     ],
+     [
+      "SCARZ",
+      97
+     ]
+    ]
+   ],
+   [
+    "Ferrari",
+    [
+     [
+      "Silky",
+      45
+     ],
+     [
+      "Carmona36",
+      8
+     ]
+    ]
+   ],
+   [
+    "Haas",
+    [
+     [
+      "dash",
+      28
+     ],
+     null
+    ]
+   ],
+   [
+    "McLaren",
+    [
+     [
+      "Kokin1012",
+      66
+     ],
+     [
+      "Franco"
+     ]
+    ]
+   ],
+   [
+    "Mercedes",
+    [
+     [
+      "d4luckii",
+      4
+     ],
+     [
+      "MAjoRPurGE",
+      22
+     ]
+    ]
+   ],
+   [
+    "Racing Bulls",
+    [
+     [
+      "Trybe",
+      11
+     ],
+     null
+    ]
+   ],
+   [
+    "Red Bull",
+    [
+     [
+      "Asian",
+      29
+     ],
+     [
+      "Divabomb",
+      8
+     ]
+    ]
+   ],
+   [
+    "Williams",
+    [
+     [
+      "Speedhawk",
+      59,
+      "TP"
+     ],
+     [
+      "Fozzy",
+      15
+     ]
+    ]
+   ]
+  ],
+  "t2": [
+   [
+    "Alpine",
+    [
+     [
+      "Shannon",
+      42,
+      "Mod"
+     ],
+     [
+      "Clyde564",
+      28
+     ]
+    ]
+   ],
+   [
+    "Aston Martin",
+    [
+     [
+      "Dobbieboy123",
+      20,
+      "TP"
+     ],
+     [
+      "Cracked_Riley09",
+      7
+     ]
+    ]
+   ],
+   [
+    "Audi",
+    [
+     [
+      "James",
+      16
+     ],
+     [
+      "Souljack222",
+      21
+     ]
+    ]
+   ],
+   [
+    "Cadillac",
+    [
+     [
+      "Kunalnn",
+      23
+     ],
+     [
+      "Hugh3421",
+      5
+     ]
+    ]
+   ],
+   [
+    "Ferrari",
+    [
+     [
+      "Jimbo",
+      60,
+      "TP"
+     ],
+     [
+      "Charlie",
+      25
+     ]
+    ]
+   ],
+   [
+    "Haas",
+    [
+     [
+      "Kenji20121161",
+      15
+     ],
+     null
+    ]
+   ],
+   [
+    "McLaren",
+    [
+     [
+      "craig_king82",
+      16
+     ],
+     [
+      "Tygo0811",
+      66
+     ]
+    ]
+   ],
+   [
+    "Mercedes",
+    [
+     [
+      "Mojo",
+      9
+     ],
+     [
+      "Ryan",
+      36
+     ]
+    ]
+   ],
+   [
+    "Racing Bulls",
+    [
+     [
+      "ROI29",
+      29
+     ],
+     [
+      "YTJacob9221",
+      22
+     ]
+    ]
+   ],
+   [
+    "Red Bull",
+    [
+     [
+      "Jakub",
+      47
+     ],
+     [
+      "Daniel",
+      19
+     ]
+    ]
+   ],
+   [
+    "Williams",
+    [
+     [
+      "Avo-AFK",
+      32
+     ],
+     [
+      "Sodden",
+      50
+     ]
+    ]
+   ]
+  ],
+  "f1": [
+   [
+    "Alpine",
+    [
+     [
+      "Kunalnn",
+      23
+     ],
+     null
+    ],
+    [
+     "Shannon",
+     42,
+     "Mod"
+    ]
+   ],
+   [
+    "Aston Martin",
+    [
+     null,
+     [
+      "Dobbieboy123",
+      20
+     ]
+    ]
+   ],
+   [
+    "Ferrari",
+    [
+     [
+      "MAjoRPurGE",
+      22
+     ],
+     [
+      "d4luckii",
+      4
+     ]
+    ],
+    [
+     "Jimbo",
+     60
+    ]
+   ],
+   [
+    "Haas",
+    [
+     null,
+     null
+    ]
+   ],
+   [
+    "Kick Sauber",
+    [
+     [
+      "GhostFaceJason",
+      17,
+      "Reserve"
+     ],
+     null
+    ]
+   ],
+   [
+    "McLaren",
+    [
+     [
+      "Souljack222",
+      21
+     ],
+     [
+      "Fathom",
+      12
+     ]
+    ]
+   ],
+   [
+    "Mercedes",
+    [
+     [
+      "Kultx",
+      69
+     ],
+     [
+      "jimbomacca"
+     ]
+    ]
+   ],
+   [
+    "Racing Bulls",
+    [
+     [
+      "RealEJT",
+      72
+     ],
+     [
+      "Asian",
+      29
+     ]
+    ],
+    [
+     "Jakub",
+     47
+    ]
+   ],
+   [
+    "Red Bull Racing",
+    [
+     [
+      "Silky",
+      45
+     ],
+     [
+      "AJM",
+      63
+     ]
+    ],
+    [
+     "AJM",
+     63
+    ]
+   ],
+   [
+    "Williams",
+    [
+     [
+      "Fozzy",
+      15
+     ],
+     null
+    ]
+   ]
+  ]
+ },
+ "occ": [
+  [
+   "Ferrari",
+   232,
+   "#d40000"
+  ],
+  [
+   "Mercedes",
+   218,
+   "#00d7b6",
+   "#06201c"
+  ],
+  [
+   "Red Bull Racing",
+   192,
+   "#1c2260"
+  ],
+  [
+   "Cadillac",
+   176,
+   "#101014"
+  ],
+  [
+   "Alpine",
+   121,
+   "#0a2fe0"
+  ],
+  [
+   "McLaren",
+   102,
+   "#ff8000"
+  ],
+  [
+   "Racing Bulls",
+   100,
+   "#2a4fd6"
+  ],
+  [
+   "Aston Martin",
+   91,
+   "#04564a"
+  ],
+  [
+   "Audi",
+   80,
+   "#f03a00"
+  ],
+  [
+   "Williams",
+   69,
+   "#1a3fd0"
+  ],
+  [
+   "Haas",
+   36,
+   "#ececec",
+   "#111"
+  ]
+ ],
+ "staff": [
+  [
+   "Owner 👑",
+   [
+    [
+     "d4luckii",
+     4
+    ]
+   ]
+  ],
+  [
+   "Co-owner 🏆",
+   [
+    [
+     "MAjoRPurGE",
+     22
+    ]
+   ]
+  ],
+  [
+   "Managers 🤝",
+   [
+    [
+     "Jakub",
+     47
+    ]
+   ]
+  ],
+  [
+   "Admins",
+   [
+    [
+     "AJM",
+     63
+    ],
+    [
+     "Asian",
+     29
+    ],
+    [
+     "Silky",
+     45
+    ]
+   ]
+  ],
+  [
+   "Moderators",
+   [
+    [
+     "jimbomacca"
+    ],
+    [
+     "dash",
+     28
+    ]
+   ]
+  ],
+  [
+   "FIA 🚓",
+   [
+    [
+     "dash",
+     28,
+     "Head of FIA"
+    ],
+    [
+     "Daan"
+    ],
+    [
+     "AJM",
+     63
+    ],
+    [
+     "Silky",
+     45
+    ],
+    [
+     "Daniel",
+     19
+    ],
+    [
+     "Asian",
+     29
+    ]
+   ]
+  ]
+ ],
+ "socials": {
+  "youtube": "",
+  "twitch": "",
+  "tiktok": "",
+  "instagram": "",
+  "x": ""
+ },
+ "socialNames": {
+  "youtube": "YouTube",
+  "twitch": "Twitch",
+  "tiktok": "TikTok",
+  "instagram": "Instagram",
+  "x": "X"
+ },
+ "occ_label": "Points after 9 &amp; 7 · PRS 2026",
+ "news": [],
+ "updated": "2026-11-17"
+}

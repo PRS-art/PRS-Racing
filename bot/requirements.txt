@@ -1,0 +1,4 @@
+discord.py>=2.4,<3
+anthropic>=0.40
+aiohttp>=3.9
+Pillow>=10

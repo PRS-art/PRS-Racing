@@ -4,6 +4,11 @@ import aiohttp, discord
 from aiohttp import web
 from anthropic import AsyncAnthropic
 
+SECRET = re.compile(r"(sk-ant-[\w-]+|github_pat_\w+|ghp_\w+|[\w-]{20,}\.[\w-]{5,}\.[\w-]{20,}|Bearer\s+\S+)")
+def redact(t):
+    return SECRET.sub("[hidden]", str(t))
+_format = logging.Formatter.format
+logging.Formatter.format = lambda self, rec: redact(_format(self, rec))   # keys never appear in logs
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger("prs")
 
@@ -146,29 +151,48 @@ class Bot(discord.Client):
         await runner.setup()
         await web.TCPSite(runner, "0.0.0.0", int(os.getenv("PORT", "8000"))).start()
 
+    async def note(self, text):
+        try:
+            ch = self.get_channel(APPROVAL_ID) or await self.fetch_channel(APPROVAL_ID)
+            await ch.send(redact(text)[:1900])
+        except Exception:
+            log.exception("cannot post to the approvals channel (check APPROVAL_CHANNEL_ID and the bot's permissions there)")
+
     async def on_ready(self):
         log.info("online as %s", self.user)
+        if not getattr(self, "said_hello", False):
+            self.said_hello = True
+            await self.note("✅ PRS bot is online and can post here. To test it, write !prs followed by any message in a public channel, and I'll say what I did with it.")
 
     async def on_message(self, m):
-        if m.author.bot or not m.guild or not watched(m.channel):
+        if m.author.bot or not m.guild:
             return
-        if not (m.attachments or KEYWORDS.search(m.content)):
+        debug = m.content.lower().startswith("!prs")
+        if not watched(m.channel):
+            if debug:
+                await self.note(f"ℹ️ Skipped #{m.channel}: the bot treats this channel as private or ignored.")
+            return
+        if not (debug or m.attachments or KEYWORDS.search(m.content)):
             return
         try:
             p = await classify(m)
             if p.get("kind") in (None, "none"):
+                if debug:
+                    await self.note("ℹ️ Claude read it and decided it isn't something to publish: " + str(p.get("summary") or "no reason given"))
                 return
             p["summary"] = str(p.get("summary") or "")[:200]
             p["data"] = clean(p.get("data") or {})
             emb = discord.Embed(title=f"{p['kind']} · {p.get('tier') or 'all'}", color=0x3B6CFF,
                                 description=p["summary"] + "\n\n```json\n" + json.dumps(p["data"], ensure_ascii=False)[:1500] + "\n```")
             emb.add_field(name="Source", value=m.jump_url)
-            msg = await self.get_channel(APPROVAL_ID).send(embed=emb)
+            ch = self.get_channel(APPROVAL_ID) or await self.fetch_channel(APPROVAL_ID)
+            msg = await ch.send(embed=emb)
             for e in ("✅", "❌"):
                 await msg.add_reaction(e)
             pending[msg.id] = p
-        except Exception:
+        except Exception as ex:
             log.exception("could not process message %s", m.id)
+            await self.note(f"⚠️ Could not process a message: {type(ex).__name__}: {str(ex)[:300]}")
 
     async def on_raw_reaction_add(self, ev):
         if ev.channel_id != APPROVAL_ID or ev.user_id == self.user.id or ev.message_id not in pending:

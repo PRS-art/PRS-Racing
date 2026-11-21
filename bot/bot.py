@@ -7,9 +7,9 @@ from anthropic import AsyncAnthropic
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger("prs")
 
-DISCORD_TOKEN = os.environ["DISCORD_TOKEN"]
-GITHUB_TOKEN = os.environ["GITHUB_TOKEN"]
-REPO = os.environ["GITHUB_REPO"]                      # e.g. PRS-art/PRS-Racing
+DISCORD_TOKEN = os.environ["DISCORD_TOKEN"].strip()
+GITHUB_TOKEN = os.environ["GITHUB_TOKEN"].strip()
+REPO = os.environ["GITHUB_REPO"].strip()                      # e.g. PRS-art/PRS-Racing
 APPROVAL_ID = int(os.environ["APPROVAL_CHANNEL_ID"])
 MODEL = os.getenv("CLAUDE_MODEL", "claude-sonnet-5-5")
 MAX_IMAGES = 4
@@ -21,7 +21,7 @@ SKIP_WORDS = [w for w in os.getenv("SKIP_NAME_WORDS", "staff,private,ticket,admi
 KEYWORDS = re.compile(r"standing|result|signing|signed|lineup|line-up|announce|penalt|calendar|championship|"
                       r"points|transfer|released|promot|principal|\bTP\b|welcome|new season|round \d", re.I)
 
-claude = AsyncAnthropic()                             # reads ANTHROPIC_API_KEY
+claude = AsyncAnthropic(api_key=os.environ["ANTHROPIC_API_KEY"].strip())   # strip() removes stray spaces or line breaks from pasted keys
 pending = {}                                          # approval message id -> proposal
 
 SYSTEM = """You read messages from a sim-racing league Discord (PEAK Racing Series, "PRS"). Tiers: "t1" (Tier 1), "t2" (Tier 2), "f1" (F1 25 tier).

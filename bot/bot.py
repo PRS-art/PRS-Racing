@@ -74,9 +74,12 @@ async def classify(msg):
                             "media_type": a.content_type.split(";")[0], "data": base64.b64encode(raw).decode()}})
     content.append({"type": "text", "text": f"Channel: #{msg.channel.name}\nAuthor: {msg.author.display_name}\n"
                                             f"Message:\n{msg.clean_content[:3000] or '(no text)'}"})
-    r = await claude.messages.create(model=MODEL, max_tokens=2000, system=SYSTEM,
+    r = await claude.messages.create(model=MODEL, max_tokens=4096, system=SYSTEM,
                                      messages=[{"role": "user", "content": content}])
-    text = re.sub(r"^```(?:json)?|```$", "", r.content[0].text.strip(), flags=re.M).strip()
+    raw = "".join(b.text for b in r.content if getattr(b, "type", "") == "text").strip()   # skip any "thinking" blocks
+    if not raw:
+        raise ValueError("Claude returned no text")
+    text = re.sub(r"^```(?:json)?|```$", "", raw, flags=re.M).strip()
     return json.loads(text)
 
 def find_team(rows, name):

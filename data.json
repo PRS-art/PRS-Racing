@@ -1152,6 +1152,11 @@
  "news": [
   {
    "date": "28 Nov 2026",
+   "title": "Australia Race Results",
+   "text": "Asian (Racing Bulls) won from pole with a 1:16.587 qualifying lap, ahead of Hugh (Alpine) in 2nd and Major (Ferrari) in 3rd. Dobbie and AJM took 4th and 5th. Major set the fastest lap and was Driver of the Day, while d4luckii did not finish."
+  },
+  {
+   "date": "28 Nov 2026",
    "title": "Canada Race Results",
    "text": "Asian (Racing Bulls) won the Canada race from Major (Ferrari), who took pole with a 1:09.432, and d4luckii (Ferrari) in third. Asian set the fastest lap with a 1:11.685, d4luckii was Driver of the Day, and AJM and fathom did not finish."
   },
@@ -1204,11 +1209,6 @@
    "date": "28 Nov 2026",
    "title": "Red Bull are PRS World Constructor Champions in T2",
    "text": "Red Bull have won the Tier 2 constructors&#x27; championship with one race to go. They had a dominant season with 5 wins and 7 poles."
-  },
-  {
-   "date": "28 Nov 2026",
-   "title": "Ashley joins Alpine as reserve driver",
-   "text": "Ashley has signed with Alpine as their reserve driver."
   }
  ],
  "updated": "2026-11-28"

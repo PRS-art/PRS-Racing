@@ -1141,6 +1141,11 @@
  "occ_label": "Points after 9 &amp; 7 · PRS 2026",
  "news": [
   {
+   "date": "28 Nov 2026",
+   "title": "Ashley joins Alpine as reserve driver",
+   "text": "Ashley has signed with Alpine as their reserve driver."
+  },
+  {
    "date": "27 Nov 2026",
    "title": "The PRS website is live",
    "text": "Peak Racing Series now has a website with the overall constructors&#x27; standings, drivers&#x27; and constructors&#x27; standings for every tier, race calendars and team lineups. The site is still being tested and in development."
@@ -1186,5 +1191,5 @@
    "text": "Alpine team principal Shannon has announced that Daniel will race for Alpine in the F1 25 tier in Season 2."
   }
  ],
- "updated": "2026-11-27"
+ "updated": "2026-11-28"
 }
